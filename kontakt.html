@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JazzLike – Kontakt</title>
+  <title>Kontakt – JazzLike</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,19 +11,33 @@
     <div class="container">
       <h1>JazzLike Workshops</h1>
       <nav>
-        <ul>
+        <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="workshops.html">Workshops</a></li>
           <li><a href="team.html">Team</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt.html" class="active">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h2>Kontakt</h2>
-    <p>Du hast Fragen oder möchtest dich anmelden? Kontaktiere uns gerne per E-Mail oder über unser Formular.</p>
+    <section>
+      <h2>Kontakt</h2>
+      <p>Du hast Fragen oder möchtest dich anmelden? Schreib uns eine Nachricht!</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Senden</button>
+      </form>
+    </section>
   </main>
 
   <footer>
